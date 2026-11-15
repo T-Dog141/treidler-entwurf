@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: treidler-entwurf
+    runtime: static
+    buildCommand: "true"
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow
